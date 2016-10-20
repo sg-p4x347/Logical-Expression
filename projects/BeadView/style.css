@@ -1,0 +1,129 @@
+body {
+	cursor: default;
+	-WEBKIT-USER-SELECT: NONE; /* SAFARI, CHROME */
+    -KHTML-USER-SELECT: NONE; /* KONQUEROR */
+    -MOZ-USER-SELECT: NONE; /* FIREFOX */
+    -MS-USER-SELECT: NONE; /* IE */
+    USER-SELECT: NONE; /* CSS3 */
+	background-color: rgb(32,32,32);
+	font-size: 2em;
+	color: rgb(128,128,128);
+	font-family: "Arial", Arial, sans-serif;
+}
+input[type=checkbox]{
+	/* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+p.title {
+	margin: 8px;
+	font-size: 4em;
+	color: rgb(32,192,32);
+}
+p.heading {
+	margin: 8px;
+	font-size: 2em;
+	color: rgb(32,128,32);
+}
+p {
+	margin: 8px;
+}
+div {
+	display: inline-block;
+}
+#scale {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+}
+#radius {
+	display: inline-block;
+}
+#settings {
+	display: inline-block;
+	vertical-align: top;
+}
+#canvas {
+	display: inline-block;
+}
+#view {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#clear {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#remove {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#name {
+	width: 8em;
+}
+#load {
+	width: 8em;
+}
+.selection {
+	padding: 0px;
+	margin: 4px;
+	vertical-align: top;
+	display: inline-block;
+	list-style: none;
+}
+.bead {
+	margin: 4px;
+	vertical-align: middle;
+	height: 64px;
+	border-radius: 8px;
+	border-bottom: 4px solid;
+	border-top: 4px solid;
+	border-color: black;
+}
+.selected {
+	border-color: blue;
+}
+.bead:hover {
+	background-color: silver;
+}
+.bead:active {
+	border-color: blue;
+}
+p {
+	display: inline-block;
+}
+.thumbnail {
+	display: inline-block;
+	height: 100%;
+	width: height;
+}
+.button {
+	font-size: 1em;
+	transition-duration: 0.5s; /* delays for 1 second */
+	cursor: default;
+	
+	display: inline-block;
+	width: auto;
+	height: auto;
+	
+	border: 2px solid white;
+	border-radius: 4px;
+	
+	padding: 4px;
+	margin: 4px;
+}
+.button:hover{
+	background-color: white;
+	color: black;
+}
+.button:active{
+	background-color: white;
+	border-color: black;
+	color: black;
+}

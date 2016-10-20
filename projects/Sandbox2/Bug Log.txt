@@ -1,0 +1,5 @@
+Started: July 29, 2015
+	*collision updated* 000: Collision-horizontal collision fails to reset if a block is removed
+	001: Collision fails to correct vertical collision when colliding on the very corner of a block,
+		resulting in a build of velocity that releases...
+	002: Top of the map crashing

@@ -1,0 +1,25 @@
+body {
+	background-color: #202020;
+	text-align: center;
+	margin: 8px;
+	font-size: 2em;
+}
+p {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.contact {
+	transition: 0.25s;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	border-radius: 8px;
+	margin: 4px;
+	padding: 4px;
+	background: grey;
+}
+.contact:hover {
+	color: black;
+	background: grey;
+}

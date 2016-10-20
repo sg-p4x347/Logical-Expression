@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Dots</title>   
+        <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+        <script type="text/javascript" src="3D Dots.js"></script>
+        <script id="shader-fs" type="x-shader/x-fragment">
+            precision mediump float;
+
+            varying vec4 vColor;
+
+            void main(void) {
+            gl_FragColor = vColor;
+            }
+        </script>
+        <script id="shader-vs" type="x-shader/x-vertex">
+            attribute vec3 aVertexPosition;
+            attribute vec4 aVertexColor;
+
+            uniform mat4 uMVMatrix;
+            uniform mat4 uPMatrix;
+
+            varying vec4 vColor;
+
+            void main(void) {
+            gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+            vColor = aVertexColor;
+            }
+        </script>  
+		<link rel="icon" href="Icon.png" type="image/ico" />
+		<link rel="stylesheet" href = "/Bearded Style.css" type="text/css" />		
+    </head>
+<body style = "text-align: center; background: #202020;">
+	<div id = "main" style="position: absolute; left: 0px; top: 0px; margin: 0px; width: 720px; height: 720px; z-index: 1; background-image: url('3Ddots Cover.png');";>
+        <canvas id="canvas" width="720" height="720"
+                style="position: absolute; left: 0; top: 0; z-index: 2; "></canvas>
+        <canvas id="HUD" width="720" height="720"
+                style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
+    </div>
+</body>
+</html>

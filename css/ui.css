@@ -1,0 +1,39 @@
+.ui__button {
+	font-size: 1em;
+	transition-duration: 0.5s;
+	cursor: grab;
+	
+	display: inline-block;
+	width: auto;
+	height: auto;
+	
+	border: 2px solid white;
+	border-radius: 4px;
+	
+	padding: 4px;
+	margin: 4px;
+}
+.ui__button:hover{
+	color: black;
+	background-color: white;
+}
+.ui__button:active{
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+.ui__input {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+}
+.ui__checkbox {
+	/* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+.ui__textbox {
+	
+}

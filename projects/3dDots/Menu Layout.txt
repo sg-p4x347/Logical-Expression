@@ -1,0 +1,21 @@
+// Titlescreen
+-Play
+	-Create Game
+		// Gamemode
+		-Classic (make segments to win squares)
+		-Segments for Cubes (make segments to win cubes)
+		-Planes for Cubes (make squares to win cubes)
+		// Size
+		-Width []
+		-Length []
+		-Height []
+		-Create Game
+	-Join Game
+		-[player1,player2,...]
+		-[...]
+		-...
+-Credits
+	// Made by sg_p4x347
+	// Multiplayer Assistance from camdonite
+	// WebGl help from ...
+

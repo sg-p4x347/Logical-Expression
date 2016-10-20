@@ -1,0 +1,120 @@
+body {
+	background-color: rgb(32,32,32);
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	font-family: "Arial", Arial, sans-serif;
+	cursor: default;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+ul {
+	list-style: none;
+	padding: 0px;
+}
+p.title {
+	margin: 8px;
+	font-size: 4em;
+	color: rgb(32,192,32);
+}
+p.heading {
+	margin: 8px;
+	font-size: 2em;
+	color: rgb(32,128,32);
+}
+p {
+	margin: 8px;
+}
+#tools {
+	text-align: center;
+	margin: 4px;
+	height: 72px;
+}
+.fancy {
+	text-align: center;
+	width: 15%;
+	font-size: 1em;
+	transition-duration: 0.5s;
+	border: 2px solid black;
+	border-radius: 4px;
+	background-color: white;
+}
+.fancy:hover {
+	border-color: white;
+}
+.hidden {
+	display: none;
+}
+#gates {	
+	margin: 4px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+#canvas {
+	display: block;
+}
+.gate {
+	transition-duration: 0.5s;
+	padding: 4px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	border-radius: 8px;
+}
+.gate:hover {
+	background-color: white;
+	border-color: black;
+}
+.gate:active {
+	background-color: blue;
+	border-color: blue;
+}
+
+.tool {
+	transition-duration: 0.5s;
+	background-color: dimgrey;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	border: 4px outset grey;
+	width: 64px;
+	height: 64px;
+	border-radius: 8px;
+}
+.tool:hover {
+	background-color: white;
+	border-color: white;
+}
+.tool:active {
+background-color: midnightblue;
+	border-color: midnightblue;
+}
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+	
+	top: 64px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tool:hover .tooltiptext {
+	transition-delay: 1s;
+    visibility: visible;
+}

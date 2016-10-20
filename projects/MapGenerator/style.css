@@ -1,0 +1,44 @@
+body {
+	background-color: rgb(32,32,32);
+	text-align: center;
+	color: rgb(128,128,128);
+	font-family: "Arial", Arial, sans-serif;
+}
+#title {
+	font-size: 4em;
+}
+#mainCanvas {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: 8px;
+	// border:8px inset rgb(64,64,64);
+}
+.function {
+	margin: 8px;
+	background-color: rgb(32,128,32);
+	font-size: 2em;
+	padding: 8px;
+	border-style: outset;
+	border-width: 8px;
+	border-color: rgb(16,64,16);
+}
+.function:hover {
+	background-color: rgb(16,64,16);
+	border-color: rgb(8,32,8);
+}
+.form {
+	margin: 8px;
+	padding: 8px;
+	display: block;
+	background-color: rgb(16,16,16);
+	border-radius: 16px;
+}
+.heading {
+	font-size: 1.5em;
+	color: rgb(32,32,128);
+}
+#infoBar {
+	font-size: 2em;
+}

@@ -1,0 +1,49 @@
+body {
+	background-color: #202020;
+	text-align: center;
+	margin: 8px;
+	font-size: 2em;
+}
+p {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.projectList {
+	list-style-image: url('/img/projectBullet.png');
+}
+.project {
+	display: flex;
+	vertical-align: top;
+	align-items: top;
+	
+}
+.project__info {
+	color: #202020;
+	display: inline-block;
+	padding: 8px;
+	margin: 4px;
+	border: 8px solid #202020;
+	border-top: none;
+	border-bottom: none;
+	background: linear-gradient(to bottom right, white, white,#e6e6e6,white,#e6e6e6,white,white,#e6e6e6,white,white,#e6e6e6);
+	box-shadow: 4px 4px 16px black;
+}
+.project__overlay {
+	visibility: hidden;
+	display: block;
+	width: 256px;
+	height: 256px;
+	margin: 0px;
+}
+.project__link {
+	display: block;
+	width: 256px;
+	height: 256px;
+	margin: 4px;
+	box-shadow: 4px 4px 16px black;
+}
+.project__link:hover .project__overlay {
+	visibility: visible;
+	border-color: white;
+}

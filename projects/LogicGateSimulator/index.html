@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Template</title>   
+        <script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+    </head>
+	<body id = "body" onload = "initialize()">
+		Load: <select  id = "Load" class = "fancy"></select>
+		Save As: <input id = "Name" class = "fancy">
+		Zoom: <input id = "Zoom" class = "fancy" type = "range" min = 16 max = 128 step = 16 value = 64>
+		<ul id = "tools">
+			<div id = "Save" class="tool tooltip" style="background-image:url(textures/Save.png)">
+				<span class="tooltiptext">Save</span>
+			</div>
+			<div id = "LoadIC" class="tool tooltip" style="background-image:url(textures/LoadIC.png)">
+				<span class="tooltiptext">Load as IC</span>
+			</div>
+			<div id = "LoadCircuit" class="tool tooltip" style="background-image:url(textures/LoadCircuit.png)">
+				<span class="tooltiptext">Load as Circuit</span>
+			</div>
+			<div id = "AddInput" class="tool tooltip" style="background-image:url(textures/AddNode.png)">
+				<span class="tooltiptext">Add Input</span>
+			</div>
+			<div id = "RemoveInput" class="tool tooltip" style="background-image:url(textures/RemoveNode.png)">
+				<span class="tooltiptext">Remove Input</span>
+			</div>
+			<div id = "Copy" class="tool tooltip" style="background-image:url(textures/Copy.png)">
+				<span class="tooltiptext">Copy</span>
+			</div>
+			<div id = "NameNode" class="tool tooltip" style="background-image:url(textures/NameNode.png)">
+				<span class="tooltiptext">Rename</span>
+			</div>
+			<div id = "Clear" class="tool tooltip" style="background-image:url(textures/Clear.png)">
+				<span class="tooltiptext">Clear</span>
+			</div>
+			<div id = "AddLine" class="hidden" style="background-image:url(textures/AddLine.png)">
+				<span class="tooltiptext">Add Line</span>
+			</div>
+			<div id = "RemoveLine" class="hidden" style="background-image:url(textures/RemoveLine.png)">
+				<span class="tooltiptext">Remove Line</span>
+			</div>
+		</ul>
+		<ul id = "gates">
+		</ul>
+		<canvas id="canvas"></canvas>
+	</body>
+</html>
